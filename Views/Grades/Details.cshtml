@@ -1,0 +1,42 @@
+﻿@model jp267815MIS4200.Models.Grade
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Grade</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Course.courseName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Course.courseName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Student.firstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Student.firstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.letterGrade)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.letterGrade)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.gradeId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
