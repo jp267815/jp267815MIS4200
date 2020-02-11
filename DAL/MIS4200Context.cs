@@ -11,7 +11,7 @@ namespace jp267815MIS4200.DAL
     {
         public MIS4200Context() : base ("name=DefaultConnection")
         {
-
+            Database.SetInitializer(new MigrateDatabaseToLatestVersion<MIS4200Context,jp267815MIS4200.Migrations.MISContext.Configuration>("DefaultConnection"));
         }
 
         public DbSet <Course> Courses { get; set; }
@@ -19,6 +19,9 @@ namespace jp267815MIS4200.DAL
 
         public DbSet <Grade> Grades { get; set; }
 
-
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+        }
     }
 }

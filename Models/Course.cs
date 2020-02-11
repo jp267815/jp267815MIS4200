@@ -15,7 +15,9 @@ namespace jp267815MIS4200.Models
 
         public string instructorId { get; set; }
 
-       
+        public int creditHours { get; set; }
+
+
 
         public ICollection<Grade> Grade { get; set; }
 

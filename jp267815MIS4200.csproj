@@ -177,6 +177,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\MISContext\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Course.cs" />
     <Compile Include="Models\Grade.cs" />
@@ -243,11 +244,6 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Courses\Create.cshtml" />
-    <Content Include="Views\Courses\Delete.cshtml" />
-    <Content Include="Views\Courses\Details.cshtml" />
-    <Content Include="Views\Courses\Edit.cshtml" />
-    <Content Include="Views\Courses\Index.cshtml" />
     <Content Include="Views\Grades\Create.cshtml" />
     <Content Include="Views\Grades\Delete.cshtml" />
     <Content Include="Views\Grades\Details.cshtml" />
@@ -258,6 +254,11 @@
     <Content Include="Views\Students\Details.cshtml" />
     <Content Include="Views\Students\Edit.cshtml" />
     <Content Include="Views\Students\Index.cshtml" />
+    <Content Include="Views\Courses\Create.cshtml" />
+    <Content Include="Views\Courses\Delete.cshtml" />
+    <Content Include="Views\Courses\Details.cshtml" />
+    <Content Include="Views\Courses\Edit.cshtml" />
+    <Content Include="Views\Courses\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -27,6 +27,8 @@ namespace jp267815MIS4200.Models
         public int zip { get; set; }
 
         public int courseId { get; set; }
+
+        public string fullName { get { return lastName + ", " + firstName; }  }
         public ICollection<Grade> Grade { get; set; }
 
 
