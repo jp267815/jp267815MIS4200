@@ -16,12 +16,12 @@ namespace jp267815MIS4200.Models
 
         [Display(Name = "First name")]
         [Required(ErrorMessage = "Student first name is required")]
-        [StringLength(20)]
+      
         public string firstName { get; set; }
 
         [Display(Name = "Last name")]
         [Required(ErrorMessage = "Student last name is required")]
-        [StringLength(20)]
+        
         public string lastName { get; set; }
 
         [Display (Name = "Most used email address")]
@@ -34,16 +34,17 @@ namespace jp267815MIS4200.Models
         [Required(ErrorMessage = "Phone numbers must be in the format (xxx) xxxx - xxx or xxx-xxx-xxxx ")]
         public string phone { get; set; }
 
-        [StringLength(100)]
+        
         [Required(ErrorMessage = "Must enter an address")]
         public string address { get; set; }
-        [StringLength(50)]
+        
 
         
         [Required(ErrorMessage = "Must enter a city")]
         public string city { get; set; }
 
-        [StringLength(2, MinimumLength =2, ErrorMessage = "State must be two characters")]
+        [Required(ErrorMessage = "State must be two characters")]
+        
         public string state { get; set; }
 
       
