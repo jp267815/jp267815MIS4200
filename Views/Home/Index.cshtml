@@ -2,12 +2,16 @@
     ViewBag.Title = "Home Page";
 }
 
-<div class="jumbotron">
-    <h1>Jaelyn Pounds</h1>
-    <p class="lead">Please feel free to connect with me on LinkedIn.</p>
-    <p><a href="https://www.linkedin.com/in/jaelyn-pounds/" class="btn btn-danger btn-lg">My LinkedIn &raquo;</a></p>
-    
-</div>
+    <div class="jumbotron">
+        <h1>Jaelyn Pounds</h1>
+        <p class="lead">Please feel free to connect with me on LinkedIn.</p>
+        <div class="alert alert-danger">
+            <strong>Warning!</strong> Clicking on the following buttons will take you external websites.
+        </div>
+
+        <p><a href="https://www.linkedin.com/in/jaelyn-pounds/" class="btn btn-danger btn-lg">My LinkedIn &raquo;</a></p>
+
+    </div>
 
 <div class="row">
     <div class="col-md-4">
@@ -21,9 +25,18 @@
         <h2>Extra Curriculars</h2>
         <p>At school I am a member of multiple organizations and hold an on-campus job. Last semester and the semester prior, I was on the executive board as the Director of Diversity and Inclusion for Information Systems and Analytics Professionals (ISAP).On campus I work for Ping Recreation Center as a member services specialist. Other organizations that I have been apart of in my college carreer are Women in Business and the Schey Sales Centre.</p>
         <p><a class="btn btn-danger" href="https://ouisap.com/">ISAP's Website &raquo;</a></p>
-        @Html.ActionLink("Courses", "Index", "Courses") <br />
-        @Html.ActionLink("Grades", "Index", "Grades")<br />
-        @Html.ActionLink("Students", "Index", "Students")
+        <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                School Information
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href="#">  @Html.ActionLink("Courses", "Index", "Courses") </a></li>
+                <li><a href="#">  @Html.ActionLink("Grades", "Index", "Grades")</a></li>
+                <li><a href="#"> @Html.ActionLink("Students", "Index", "Students")</a></li>
+            </ul>
+        </div>
+     
     </div>
     <div class="col-md-4">
         <h2>Future Job</h2>

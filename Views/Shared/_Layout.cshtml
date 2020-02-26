@@ -6,7 +6,7 @@
     <title>@ViewBag.Title - My ASP.NET Application</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
-
+    <p> <span class="glyphicon glyphicon-star-empty"></span></p><p> <span class="glyphicon glyphicon-star-empty"></span></p><p> <span class="glyphicon glyphicon-star-empty"></span></p><p> <span class="glyphicon glyphicon-star-empty"></span></p>
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -21,13 +21,14 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
+                    
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                     <li>@Html.ActionLink("Students", "Index", "Students")</li>
                     <li>@Html.ActionLink("Grades", "Index", "Grades")</li>
                     <li>@Html.ActionLink("Courses", "Index", "Courses")</li>
-                   <li></li> @Html.DropDownList("Students","Grades", "Courses")
+
 
                 </ul>
                 @Html.Partial("_LoginPartial")
@@ -47,3 +48,10 @@
     @RenderSection("scripts", required: false)
 </body>
 </html>
+
+<div class="container">
+
+    <p> <span class="glyphicon glyphicon-heart"></span></p>
+    
+
+
